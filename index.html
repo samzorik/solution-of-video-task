@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="video-container" id="video-container">
+        <video controls="" autoplay="" name="media" id="video">
+          <source src="https://tractive.com/assets/static/videos/ActivityMonitoring_15s_EN.mp4" type="video/mp4">
+        </video>
+        <div class="video-controls hidden" id="video-controls">
+          <button data-title="Play" id="play" class="play-button">
+            <i class="playback-icons play-icon"></i>
+            <i class="playback-icons pause-icon hidden"></i>
+          </button>
+          <div class="right-controls">
+            <div class="time">
+              <time id="time-remaining">00:00</time>
+            </div>
+            <button data-title="Mute" class="volume-button" id="volume-button">
+              <i class="volume-icons volume-on"></i>
+              <i class="volume-icons volume-off hidden"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
